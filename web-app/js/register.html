@@ -1,0 +1,27 @@
+<div class="col-sm-4 col-sm-offset-4">
+    <div class="well">
+        <h3>Sign Up</h3>
+
+        <form>
+            <div class="form-group">
+                <input type="text" name="username" class="form-control" placeholder="Username" ng-model="register.username" autofocus>
+            </div>
+            <div class="form-group">
+                <input type="text" name="firstName" class="form-control" placeholder="First Name" ng-model="register.firstName">
+            </div>
+            <div class="form-group">
+                <input type="text" name="lastName" class="form-control" placeholder="Last Name" ng-model="register.lastName">
+            </div>
+            <div class="form-group">
+                <input type="password" name="password" class="form-control" placeholder="Password" ng-model="register.password">
+            </div>
+            <div class="form-group">
+                <input type="password" name="confirmPassword" class="form-control" placeholder="Confirm Password" ng-model="register.confirmPassword">
+            </div>
+            <div>
+                <div style="background: #FF6666" ng-if="error"><p name="errorRegister">error</p></div>
+            </div>
+            <button class="btn btn-primary" name="register" ng-click="register()">Register</button>
+        </form>
+    </div>
+</div>

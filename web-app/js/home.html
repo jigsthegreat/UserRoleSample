@@ -1,0 +1,7 @@
+{{ hello }}
+
+<div ng-repeat="user in users">
+	<div>
+		-{{ user.username }} <button class="btn btn-info" ng-click="changeStatus(user.id)">GRANT ACCESS</button>
+	</div>
+</div>
